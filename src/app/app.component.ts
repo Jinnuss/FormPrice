@@ -109,4 +109,8 @@ export class AppComponent {
     this.we = this.PriceForm.value.we;
     console.log(this.price);
   }
+  detail = false;
+  onClick() {
+    this.detail = !this.detail;
+  }
 }

@@ -77,7 +77,7 @@
           <div class="col-md-8">
             <div class="estimate-delivery"><img src="../assets/images/truck.svg" alt="click247" class="icon-delivery">
               <div><label class="label-express">Vận chuyển đường bay</label>
-                <span class="available"><span class="v">v</span> Available</span>
+                <span class="available"><i class="fa-solid fa-check v"></i> Available</span>
               </div>
               <p class="time-estimate">Thời gian giao hàng dự kiến: 7 - 10 ngày</p>
             </div>
@@ -104,7 +104,38 @@
                 </span>
               </ng-template>
               |
-              <span class="view-price">Chi tiết<i class="fa fa-angle-down"></i></span>
+              <span class="view-price" (click)="onClick()">Chi tiết <i class="fa-solid fa-chevron-down"></i></span>
+              <div class="menu" [class.detail]="detail">
+                <div class="item">
+                  <div class="title">CHI TIẾT TIỀN HÀNG</div>
+                  <div class="box">
+                    <div class="left">Tiền hàng: </div>
+                    <div class="right">{{price* 25000}}</div>
+                  </div>
+                  <div class="box">
+                    <div class="left">Phí dịch vụ: </div>
+                    <div class="right">20000</div>
+                  </div>
+                  <div class="box">
+                    <div class="left">Phí vận chuyển quốc tế: </div>
+                    <div class="right">{{we* 210000}}</div>
+                  </div>
+                  <div class="box">
+                    <div class="left">Phụ thu: </div>
+                    <div class="right">0</div>
+                  </div>
+                  <div class="box">
+                    <div class="left">Phí GTGT: </div>
+                    <div class="right">0</div>
+                  </div>
+                  <hr>
+                  <div class="box">
+                    <div class="left">Tổng tiền hàng: </div>
+                    <div class="right"> {{price* 25000 + we*210000 +20000}}</div>
+                  </div>
+
+                </div>
+              </div>
             </div>
           </div>
         </div>

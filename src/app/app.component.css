@@ -94,6 +94,7 @@ ul {
 }
 
 .list-result .item-estimate {
+  position: relative;
   margin-bottom: 24px;
   padding: 10px;
   border-radius: 8px;
@@ -152,9 +153,15 @@ ul {
 }
 
 .view-price {
+  text-align: end;
   font-size: 13px;
   cursor: pointer;
   color: #939393;
+  display: inline-block;
+}
+
+.view-price:hover {
+  color: #F5A100;
 }
 
 .form-group .desc {
@@ -173,4 +180,49 @@ ul {
 
 .show {
   display: block !important;
+}
+
+.abc {
+  height: 700px;
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.menu {
+  display: none;
+  border: 1px solid #00000045;
+  padding: 10px;
+  border-radius: 8px;
+  position: absolute;
+  right: 10px;
+  bottom: 40px;
+  background-color: white;
+}
+
+.detail {
+  display: block;
+}
+
+.menu .item .title {
+  font-size: 18px;
+}
+
+.menu .item .left {
+  margin-right: 30px;
+}
+
+.available {
+  position: relative;
+  padding-left: 15px;
+}
+
+.v {
+  position: absolute;
+  left: 2px;
+  top: 5px;
 }
