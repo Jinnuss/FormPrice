@@ -32,6 +32,7 @@
 }
 
 .item_country {
+  width: 16%;
   position: relative;
   padding: 5px 10px;
   display: inline-flex;
@@ -225,4 +226,22 @@ ul {
   position: absolute;
   left: 2px;
   top: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+  .item_country {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .item_country {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .item_country {
+    width: 100%;
+  }
 }
